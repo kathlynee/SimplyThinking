@@ -11,6 +11,13 @@
 		040E12162A252130002C86A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12152A252130002C86A2 /* ContentView.swift */; };
 		040E12182A252131002C86A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040E12172A252131002C86A2 /* Assets.xcassets */; };
 		040E121C2A252131002C86A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040E121B2A252131002C86A2 /* Preview Assets.xcassets */; };
+		040E12242A252194002C86A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12232A252194002C86A2 /* ViewController.swift */; };
+		040E12262A2521A2002C86A2 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12252A2521A2002C86A2 /* KeyboardViewController.swift */; };
+		040E12282A2521B5002C86A2 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12272A2521B5002C86A2 /* BoardViewController.swift */; };
+		040E122A2A2521C6002C86A2 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12292A2521C6002C86A2 /* KeyCell.swift */; };
+		040E122D2A25251A002C86A2 /* WordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E122C2A25251A002C86A2 /* WordleView.swift */; };
+		040E122F2A252720002C86A2 /* MathQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E122E2A252720002C86A2 /* MathQuizView.swift */; };
+		040E12312A25279A002C86A2 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12302A25279A002C86A2 /* AnswerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		040E12172A252131002C86A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040E12192A252131002C86A2 /* SimplyThinking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimplyThinking.entitlements; sourceTree = "<group>"; };
 		040E121B2A252131002C86A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		040E12232A252194002C86A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		040E12252A2521A2002C86A2 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		040E12272A2521B5002C86A2 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		040E12292A2521C6002C86A2 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
+		040E122C2A25251A002C86A2 /* WordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleView.swift; sourceTree = "<group>"; };
+		040E122E2A252720002C86A2 /* MathQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizView.swift; sourceTree = "<group>"; };
+		040E12302A25279A002C86A2 /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,8 @@
 		040E12072A252130002C86A2 = {
 			isa = PBXGroup;
 			children = (
+				040E122B2A252503002C86A2 /* View */,
+				040E12222A25214B002C86A2 /* Wordle */,
 				040E12122A252130002C86A2 /* SimplyThinking */,
 				040E12112A252130002C86A2 /* Products */,
 			);
@@ -67,6 +83,27 @@
 				040E121B2A252131002C86A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		040E12222A25214B002C86A2 /* Wordle */ = {
+			isa = PBXGroup;
+			children = (
+				040E122C2A25251A002C86A2 /* WordleView.swift */,
+				040E12232A252194002C86A2 /* ViewController.swift */,
+				040E12252A2521A2002C86A2 /* KeyboardViewController.swift */,
+				040E12272A2521B5002C86A2 /* BoardViewController.swift */,
+				040E12292A2521C6002C86A2 /* KeyCell.swift */,
+			);
+			path = Wordle;
+			sourceTree = "<group>";
+		};
+		040E122B2A252503002C86A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040E122E2A252720002C86A2 /* MathQuizView.swift */,
+				040E12302A25279A002C86A2 /* AnswerButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040E12242A252194002C86A2 /* ViewController.swift in Sources */,
 				040E12162A252130002C86A2 /* ContentView.swift in Sources */,
 				040E12142A252130002C86A2 /* SimplyThinkingApp.swift in Sources */,
+				040E122F2A252720002C86A2 /* MathQuizView.swift in Sources */,
+				040E122A2A2521C6002C86A2 /* KeyCell.swift in Sources */,
+				040E12312A25279A002C86A2 /* AnswerButton.swift in Sources */,
+				040E12262A2521A2002C86A2 /* KeyboardViewController.swift in Sources */,
+				040E12282A2521B5002C86A2 /* BoardViewController.swift in Sources */,
+				040E122D2A25251A002C86A2 /* WordleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
