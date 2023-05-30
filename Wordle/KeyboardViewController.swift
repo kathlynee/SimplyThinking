@@ -65,6 +65,7 @@ extension KeyboardViewController {
         }
         let letter = keys[indexPath.section][indexPath.row]
         cell.configure(with: letter)
+        cell.backgroundColor = UIColor.systemMint
         return cell
     }
 

@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let answers = [
-        "later", "bloke", "there", "ultra"
+        "write", "bloke", "there", "ultra"
     ]
 
     var answer = ""
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     private func addChildren() {
         addChild(keyboardVC)
         keyboardVC.didMove(toParent: self)
-        keyboardVC.delegate = self
+        keyboardVC.delegate = self // Tambahkan baris ini
         keyboardVC.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(keyboardVC.view)
 
@@ -44,6 +44,7 @@ class ViewController: UIViewController {
 
         addConstraints()
     }
+
 
     func addConstraints() {
         NSLayoutConstraint.activate([
@@ -81,8 +82,23 @@ extension ViewController: KeyboardViewControllerDelegate {
         }
 
         boardVC.reloadData()
+        // Check if all letters are guessed
+        let guessedLetters = guesses.flatMap { $0.compactMap { $0 } }
+        let answerLetters = Array(answer)
+
+        if guessedLetters == answerLetters {
+            showAlert(message: "Hooray, you did it!")
+        }
+    }
+
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
 }
+
 
 extension ViewController: BoardViewControllerDatasource {
     var currentGuesses: [[Character?]] {

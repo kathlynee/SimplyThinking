@@ -9,15 +9,24 @@ import UIKit
 
 class KeyCell: UICollectionViewCell {
     static let identifier = "KeyCell"
+    
 
+    override var backgroundColor: UIColor? {
+            didSet {
+                contentView.backgroundColor = backgroundColor
+            }
+        }
+    
     let label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .white
+        label.textColor = .blue
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 18, weight: .medium)
         return label
     }()
+    
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,4 +52,7 @@ class KeyCell: UICollectionViewCell {
     func configure(with letter: Character) {
         label.text = String(letter).uppercased()
     }
+    
+    
+    
 }

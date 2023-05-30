@@ -61,7 +61,7 @@ extension BoardViewController {
 
         cell.backgroundColor = datasource?.boxColor(at: indexPath)
         cell.layer.borderWidth = 1
-        cell.layer.borderColor = UIColor.systemGray3.cgColor
+        cell.layer.borderColor = UIColor.systemIndigo.cgColor
 
         let guesses = datasource?.currentGuesses ?? []
         if let letter = guesses[indexPath.section][indexPath.row] {

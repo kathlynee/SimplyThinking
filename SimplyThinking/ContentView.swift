@@ -10,11 +10,13 @@ import UIKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "l.joystick.tilt.up")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+        VStack(spacing: 20) {
             Text("Hi, Let's Play with Simply Thinking")
+                .font(.title)
+            Image(systemName: "l.joystick.tilt.up")
+                .font(.system(size: 80))
+                .foregroundColor(.accentColor)
+            
             
             Button(action: {
                 presentWordleView()
@@ -37,6 +39,17 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            
+            Button(action: {
+                presentTicTacToeView()
+            }) {
+                Text("TicTacToe")
+                    .font(.title)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .padding()
     }
@@ -52,6 +65,13 @@ struct ContentView: View {
         let mathQuizViewController = UIHostingController(rootView: MathQuizView())
         if let viewController = UIApplication.shared.windows.first?.rootViewController {
             viewController.present(mathQuizViewController, animated: true, completion: nil)
+        }
+    }
+    
+    private func presentTicTacToeView() {
+        let ticTacToeViewController = UIHostingController(rootView: TicTacToeView())
+        if let viewController = UIApplication.shared.windows.first?.rootViewController {
+            viewController.present(ticTacToeViewController, animated: true, completion: nil)
         }
     }
 }

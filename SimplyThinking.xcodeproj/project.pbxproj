@@ -18,6 +18,9 @@
 		040E122D2A25251A002C86A2 /* WordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E122C2A25251A002C86A2 /* WordleView.swift */; };
 		040E122F2A252720002C86A2 /* MathQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E122E2A252720002C86A2 /* MathQuizView.swift */; };
 		040E12312A25279A002C86A2 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12302A25279A002C86A2 /* AnswerButton.swift */; };
+		040E12362A252F13002C86A2 /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E12352A252F13002C86A2 /* TicTacToeView.swift */; };
+		0436A93E2A2536B1002412CF /* XOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436A93D2A2536B1002412CF /* XOButton.swift */; };
+		0436A9422A2536F9002412CF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436A9412A2536F9002412CF /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		040E122C2A25251A002C86A2 /* WordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleView.swift; sourceTree = "<group>"; };
 		040E122E2A252720002C86A2 /* MathQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizView.swift; sourceTree = "<group>"; };
 		040E12302A25279A002C86A2 /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		040E12352A252F13002C86A2 /* TicTacToeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
+		0436A93D2A2536B1002412CF /* XOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOButton.swift; sourceTree = "<group>"; };
+		0436A9412A2536F9002412CF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 		040E12072A252130002C86A2 = {
 			isa = PBXGroup;
 			children = (
+				040E12322A252E1B002C86A2 /* TicTacToe */,
 				040E122B2A252503002C86A2 /* View */,
 				040E12222A25214B002C86A2 /* Wordle */,
 				040E12122A252130002C86A2 /* SimplyThinking */,
@@ -104,6 +111,16 @@
 				040E12302A25279A002C86A2 /* AnswerButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		040E12322A252E1B002C86A2 /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				040E12352A252F13002C86A2 /* TicTacToeView.swift */,
+				0436A93D2A2536B1002412CF /* XOButton.swift */,
+				0436A9412A2536F9002412CF /* Utils.swift */,
+			);
+			path = TicTacToe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,14 +194,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				040E12242A252194002C86A2 /* ViewController.swift in Sources */,
+				0436A93E2A2536B1002412CF /* XOButton.swift in Sources */,
 				040E12162A252130002C86A2 /* ContentView.swift in Sources */,
 				040E12142A252130002C86A2 /* SimplyThinkingApp.swift in Sources */,
+				040E12362A252F13002C86A2 /* TicTacToeView.swift in Sources */,
 				040E122F2A252720002C86A2 /* MathQuizView.swift in Sources */,
 				040E122A2A2521C6002C86A2 /* KeyCell.swift in Sources */,
 				040E12312A25279A002C86A2 /* AnswerButton.swift in Sources */,
 				040E12262A2521A2002C86A2 /* KeyboardViewController.swift in Sources */,
 				040E12282A2521B5002C86A2 /* BoardViewController.swift in Sources */,
 				040E122D2A25251A002C86A2 /* WordleView.swift in Sources */,
+				0436A9422A2536F9002412CF /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
